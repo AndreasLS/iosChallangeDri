@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().barTintColor = DribbbleColors.navigation.color
+        UINavigationBar.appearance().barStyle = UIBarStyle.black
+        
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.rootViewController = UINavigationController.init(rootViewController:
+            ListPopularViewController.init(viewModel: ListPopularViewModel()))
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

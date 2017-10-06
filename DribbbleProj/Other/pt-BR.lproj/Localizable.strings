@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  DribbbleProj
+
+  Created by Andre Luiz Salla on 06/10/17.
+  Copyright © 2017 Andre Luiz Salla. All rights reserved.
+*/
+msg_erro_desconhecido = "Erro desconhecido";
+label_erro = "Erro";
+label_ok = "OK";
